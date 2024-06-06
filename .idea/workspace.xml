@@ -15,7 +15,7 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Add session to gitignore">
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +136,7 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_two (1)">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_two (2)">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -171,8 +171,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 04 tests::test_part_one -- --exact" />
+    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 06 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -223,7 +223,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 03 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 06 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -260,18 +260,18 @@
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
       <item itemvalue="Cargo.Test tests::test_part_one" />
-      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
+      <item itemvalue="Cargo.Test tests::test_part_one (2)" />
       <item itemvalue="Cargo.Test tests::test_part_two (1)" />
       <item itemvalue="Cargo.Test tests::test_part_two (2)" />
       <item itemvalue="Cargo.Test tests::test_part_two" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
+        <item itemvalue="Cargo.Test tests::test_part_one (2)" />
         <item itemvalue="Cargo.Test tests::test_part_two (1)" />
         <item itemvalue="Cargo.Test tests::test_part_one" />
         <item itemvalue="Cargo.Test tests::test_part_two" />
-        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
-        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +297,7 @@
       <workItem from="1715953803796" duration="20416000" />
       <workItem from="1717671672568" duration="3000" />
       <workItem from="1717673009335" duration="1047000" />
-      <workItem from="1717674750624" duration="3436000" />
+      <workItem from="1717674750624" duration="5513000" />
     </task>
     <task id="LOCAL-00001" summary="✨ migrate from global to 2023 only repo">
       <option name="closed" value="true" />
@@ -667,7 +667,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717677071867</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="✨ Solve day 5">
+      <option name="closed" value="true" />
+      <created>1717679521711</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1717679521711</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -707,7 +715,8 @@
     <MESSAGE value="✨ Solve day 24" />
     <MESSAGE value="✨ Bootstrap 2020 and solve the 4 first days" />
     <MESSAGE value="✨ Add session to gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Add session to gitignore" />
+    <MESSAGE value="✨ Solve day 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
