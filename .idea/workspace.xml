@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="CargoProjectFeatures">
+    <cargoProject file="$PROJECT_DIR$/Cargo.toml">
+      <package file="$PROJECT_DIR$">
+        <feature name="test_lib" />
+        <feature name="today" />
+      </package>
+    </cargoProject>
+  </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 24">
+      <change beforePath="$PROJECT_DIR$/.cargo/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.cargo/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template/aoc_cli.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/aoc_cli.rs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="tmp" />
+        <option name="rewordedMessage" value="✨ Solve day 19 &amp; 20 (dirtiest solve ever)" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="d7441279b5f2f8230e260c941d0a6a8ac433082c" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="b1ba9796" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ZV0rrs69bgZTQCpkb45rhxiaoQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Expand 13.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 14.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 15.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 18.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run 15.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run 18.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Run advent_of_code.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 01::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 02::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 03::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 04::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 05::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 06::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 07::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 08::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 09::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 10::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 11::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 12::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 13::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 17::tests.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test tests::test_intersection_2d.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one (1).executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test tests::test_part_one (2).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one (3).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one_down.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (2).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (3).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_python.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;com.github.patou.gitmoji.display-icon&quot;: &quot;emoji&quot;,
+    &quot;com.github.patou.gitmoji.text-after-unicode&quot;: &quot; &quot;,
+    &quot;com.github.patou.gitmoji.use-unicode&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mania/perso/advent-of-code-2020&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;build.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/data/examples" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/custom_grid" />
+    </key>
+  </component>
+  <component name="RsExternalLinterProjectSettings">
+    <option name="runOnTheFly" value="true" />
+    <option name="tool" value="Clippy" />
+  </component>
+  <component name="RunManager" selected="Cargo.Test tests::test_part_two">
+    <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run --package advent_of_code --bin advent_of_code" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="test --workspace" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 04 tests::test_part_one -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 03 tests::test_part_one -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_two (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 02 tests::test_part_two -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_two (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 03 tests::test_part_two -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_two" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 04 tests::test_part_two -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cargo.Run advent_of_code" />
+      <item itemvalue="Cargo.Test advent_of_code" />
+      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
+      <item itemvalue="Cargo.Test tests::test_part_one (2)" />
+      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
+      <item itemvalue="Cargo.Test tests::test_part_two (2)" />
+      <item itemvalue="Cargo.Test tests::test_part_two" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cargo.Test tests::test_part_two" />
+        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
+        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
+        <item itemvalue="Cargo.Test tests::test_part_one (2)" />
+        <item itemvalue="Cargo.Test tests::test_part_two (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="" />
+      <created>1702492141090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702492141090</updated>
+      <workItem from="1702492142256" duration="18633000" />
+      <workItem from="1702550541528" duration="21921000" />
+      <workItem from="1702774167294" duration="40669000" />
+      <workItem from="1702902332468" duration="6731000" />
+      <workItem from="1702976931198" duration="34625000" />
+      <workItem from="1703093587751" duration="95813000" />
+      <workItem from="1704186914465" duration="4463000" />
+      <workItem from="1715953579818" duration="192000" />
+      <workItem from="1715953803796" duration="20416000" />
+      <workItem from="1717671672568" duration="3000" />
+      <workItem from="1717673009335" duration="1047000" />
+      <workItem from="1717674750624" duration="968000" />
+    </task>
+    <task id="LOCAL-00001" summary="✨ migrate from global to 2023 only repo">
+      <option name="closed" value="true" />
+      <created>1702495467345</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702495467345</updated>
+    </task>
+    <task id="LOCAL-00002" summary="✨ migrate from global to 2023 only repo">
+      <option name="closed" value="true" />
+      <created>1702495474316</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702495474316</updated>
+    </task>
+    <task id="LOCAL-00003" summary="✨ migrate from global to 2023 only repo">
+      <option name="closed" value="true" />
+      <created>1702495567338</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1702495567338</updated>
+    </task>
+    <task id="LOCAL-00004" summary="✨ migrate from global to 2023 only repo">
+      <option name="closed" value="true" />
+      <created>1702495900529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702495900529</updated>
+    </task>
+    <task id="LOCAL-00005" summary="✨ migrate from global to 2023 only repo">
+      <option name="closed" value="true" />
+      <created>1702496112261</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702496112261</updated>
+    </task>
+    <task id="LOCAL-00006" summary="♻️ refactor day 7">
+      <option name="closed" value="true" />
+      <created>1702501529988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702501529988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="♻️ refactor day 7">
+      <option name="closed" value="true" />
+      <created>1702501799639</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702501799639</updated>
+    </task>
+    <task id="LOCAL-00008" summary="♻️ refactor day 7">
+      <option name="closed" value="true" />
+      <created>1702502704177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702502704177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="✨ Solve 2023 day 14 (dirty slow)">
+      <option name="closed" value="true" />
+      <created>1702549549161</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702549549161</updated>
+    </task>
+    <task id="LOCAL-00010" summary="✨ Solve 2023 day 15">
+      <option name="closed" value="true" />
+      <created>1702635950883</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702635950883</updated>
+    </task>
+    <task id="LOCAL-00011" summary="✨ Solve 2023 day 15">
+      <option name="closed" value="true" />
+      <created>1702636054985</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702636054985</updated>
+    </task>
+    <task id="LOCAL-00012" summary="🎨 cargo fmt">
+      <option name="closed" value="true" />
+      <created>1702636075127</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702636075127</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tmp 15.5">
+      <option name="closed" value="true" />
+      <created>1702673344586</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702673344586</updated>
+    </task>
+    <task id="LOCAL-00014" summary="⚡️ improve day 14 part 2 performances (memoize)">
+      <option name="closed" value="true" />
+      <created>1702674624788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702674624788</updated>
+    </task>
+    <task id="LOCAL-00015" summary="⚡️ improve day 14 part 2 performances (memoize)">
+      <option name="closed" value="true" />
+      <created>1702674862783</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702674862783</updated>
+    </task>
+    <task id="LOCAL-00016" summary="⚡️ improve day 14 part 2 performances (memoize)">
+      <option name="closed" value="true" />
+      <created>1702675172708</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702675172708</updated>
+    </task>
+    <task id="LOCAL-00017" summary="✨ ✨ Solve 2023 day 16">
+      <option name="closed" value="true" />
+      <created>1702728068756</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702728068756</updated>
+    </task>
+    <task id="LOCAL-00018" summary="✨ Solve 2023 day 16">
+      <option name="closed" value="true" />
+      <created>1702728079233</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702728079233</updated>
+    </task>
+    <task id="LOCAL-00019" summary="⚡️ Enhance day 16">
+      <option name="closed" value="true" />
+      <created>1702774927358</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702774927358</updated>
+    </task>
+    <task id="LOCAL-00020" summary="tmp (work for example)">
+      <option name="closed" value="true" />
+      <created>1702827467511</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1702827467511</updated>
+    </task>
+    <task id="LOCAL-00021" summary="tmp (work for input)">
+      <option name="closed" value="true" />
+      <created>1702831128563</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1702831128563</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tmp (work for input)">
+      <option name="closed" value="true" />
+      <created>1702831983636</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1702831983636</updated>
+    </task>
+    <task id="LOCAL-00023" summary="tmp (work for input)">
+      <option name="closed" value="true" />
+      <created>1702832107465</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1702832107465</updated>
+    </task>
+    <task id="LOCAL-00024" summary="✨ Solve day 17">
+      <option name="closed" value="true" />
+      <created>1702832160571</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1702832160571</updated>
+    </task>
+    <task id="LOCAL-00025" summary="✨ Solve day 17">
+      <option name="closed" value="true" />
+      <created>1702848864577</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1702848864577</updated>
+    </task>
+    <task id="LOCAL-00026" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1702897570632</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1702897570632</updated>
+    </task>
+    <task id="LOCAL-00027" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1702898021446</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1702898021446</updated>
+    </task>
+    <task id="LOCAL-00028" summary="✨ Solve day 18">
+      <option name="closed" value="true" />
+      <created>1702908470932</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702908470932</updated>
+    </task>
+    <task id="LOCAL-00029" summary="✨ Solve day 18">
+      <option name="closed" value="true" />
+      <created>1702908631475</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702908631475</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1702998747849</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1702998747849</updated>
+    </task>
+    <task id="LOCAL-00031" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1703000092750</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1703000092750</updated>
+    </task>
+    <task id="LOCAL-00032" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1703000244628</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1703000244628</updated>
+    </task>
+    <task id="LOCAL-00033" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1703000283601</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1703000283601</updated>
+    </task>
+    <task id="LOCAL-00034" summary="✨ Solve day 20 (dirtiest solve ever)">
+      <option name="closed" value="true" />
+      <created>1703094826011</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1703094826012</updated>
+    </task>
+    <task id="LOCAL-00035" summary="✨ Solve day 20 (dirtiest solve ever)">
+      <option name="closed" value="true" />
+      <created>1703094839342</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1703094839342</updated>
+    </task>
+    <task id="LOCAL-00036" summary="✨ Solve day 20 (dirtiest solve ever)">
+      <option name="closed" value="true" />
+      <created>1703094883032</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1703094883032</updated>
+    </task>
+    <task id="LOCAL-00037" summary="tmp">
+      <option name="closed" value="true" />
+      <created>1703161695616</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1703161695616</updated>
+    </task>
+    <task id="LOCAL-00038" summary="✨ Solve day 21">
+      <option name="closed" value="true" />
+      <created>1703351285940</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1703351285940</updated>
+    </task>
+    <task id="LOCAL-00039" summary="✨ Solve day 22">
+      <option name="closed" value="true" />
+      <created>1703605171098</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1703605171098</updated>
+    </task>
+    <task id="LOCAL-00040" summary="✨ Solve day 23">
+      <option name="closed" value="true" />
+      <created>1703933723103</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1703933723103</updated>
+    </task>
+    <task id="LOCAL-00041" summary="✨ Solve day 23">
+      <option name="closed" value="true" />
+      <created>1703938238090</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1703938238090</updated>
+    </task>
+    <task id="LOCAL-00042" summary="✨ Solve day 23">
+      <option name="closed" value="true" />
+      <created>1703938650486</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1703938650487</updated>
+    </task>
+    <task id="LOCAL-00043" summary="✨ Solve day 23">
+      <option name="closed" value="true" />
+      <created>1703951589262</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1703951589262</updated>
+    </task>
+    <task id="LOCAL-00044" summary="✨ Solve day 24">
+      <option name="closed" value="true" />
+      <created>1704118722357</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1704118722357</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="✨ migrate from global to 2023 only repo" />
+    <MESSAGE value="♻️ refactor day 7" />
+    <MESSAGE value="✨ Solve 2023 day 14 (dirty slow)" />
+    <MESSAGE value="✨ Solve 2023 day 15" />
+    <MESSAGE value=" cargo fmt" />
+    <MESSAGE value="tmp 15.5" />
+    <MESSAGE value="⚡️ improve day 14 part 2 performances (memoize)" />
+    <MESSAGE value="✨ ✨ Solve 2023 day 16" />
+    <MESSAGE value="✨ Solve 2023 day 16" />
+    <MESSAGE value="⚡️ Enhance day 16" />
+    <MESSAGE value="tmp (work for example)" />
+    <MESSAGE value="tmp (work for input)" />
+    <MESSAGE value="✨ Solve day 17" />
+    <MESSAGE value="✨ Solve day 18" />
+    <MESSAGE value="✨ Solve day 20 (dirtiest solve ever)" />
+    <MESSAGE value="tmp" />
+    <MESSAGE value="✨ Solve day 21" />
+    <MESSAGE value="✨ Solve day 22" />
+    <MESSAGE value="✨ Solve day 23" />
+    <MESSAGE value="✨ Solve day 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 24" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
