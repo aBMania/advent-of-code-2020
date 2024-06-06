@@ -15,11 +15,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 24">
-      <change beforePath="$PROJECT_DIR$/.cargo/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.cargo/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template/aoc_cli.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/template/aoc_cli.rs" afterDir="false" />
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Bootstrap 2020 and solve the 4 first days">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +297,7 @@
       <workItem from="1715953803796" duration="20416000" />
       <workItem from="1717671672568" duration="3000" />
       <workItem from="1717673009335" duration="1047000" />
-      <workItem from="1717674750624" duration="968000" />
+      <workItem from="1717674750624" duration="1028000" />
     </task>
     <task id="LOCAL-00001" summary="✨ migrate from global to 2023 only repo">
       <option name="closed" value="true" />
@@ -654,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704118722357</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="✨ Bootstrap 2020 and solve the 4 first days">
+      <option name="closed" value="true" />
+      <created>1717677034336</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1717677034336</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -692,7 +697,8 @@
     <MESSAGE value="✨ Solve day 22" />
     <MESSAGE value="✨ Solve day 23" />
     <MESSAGE value="✨ Solve day 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 24" />
+    <MESSAGE value="✨ Bootstrap 2020 and solve the 4 first days" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Bootstrap 2020 and solve the 4 first days" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
