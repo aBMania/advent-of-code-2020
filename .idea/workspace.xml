@@ -15,8 +15,13 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 5">
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 6">
+      <change afterPath="$PROJECT_DIR$/data/examples/07-2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/examples/07.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/examples/07.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/07.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/07.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +98,7 @@
     "Cargo.Test tests::test_part_one.executor": "Run",
     "Cargo.Test tests::test_part_one_down.executor": "Run",
     "Cargo.Test tests::test_part_two (1).executor": "Run",
-    "Cargo.Test tests::test_part_two (2).executor": "Run",
+    "Cargo.Test tests::test_part_two (2).executor": "Debug",
     "Cargo.Test tests::test_part_two (3).executor": "Run",
     "Cargo.Test tests::test_part_two.executor": "Run",
     "Cargo.Test tests::test_python.executor": "Run",
@@ -104,7 +109,7 @@
     "com.github.patou.gitmoji.text-after-unicode": " ",
     "com.github.patou.gitmoji.use-unicode": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/mania/perso/advent-of-code-2020",
+    "last_opened_file_path": "/home/mania/perso/advent-of-code-2020/data/examples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -118,14 +123,15 @@
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT"
+      "TEXT",
+      "yaml"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/data/examples" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -136,7 +142,7 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_two (2)">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_two">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -171,8 +177,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 06 tests::test_part_one -- --exact" />
+    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 07 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -188,8 +194,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 05 tests::test_part_one -- --exact" />
+    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 06 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -240,7 +246,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 04 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 07 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -259,7 +265,7 @@
     <list>
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
-      <item itemvalue="Cargo.Test tests::test_part_one" />
+      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
       <item itemvalue="Cargo.Test tests::test_part_one (2)" />
       <item itemvalue="Cargo.Test tests::test_part_two (1)" />
       <item itemvalue="Cargo.Test tests::test_part_two (2)" />
@@ -267,11 +273,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_part_two" />
+        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
         <item itemvalue="Cargo.Test tests::test_part_two (2)" />
         <item itemvalue="Cargo.Test tests::test_part_one (2)" />
         <item itemvalue="Cargo.Test tests::test_part_two (1)" />
-        <item itemvalue="Cargo.Test tests::test_part_one" />
-        <item itemvalue="Cargo.Test tests::test_part_two" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +303,8 @@
       <workItem from="1715953803796" duration="20416000" />
       <workItem from="1717671672568" duration="3000" />
       <workItem from="1717673009335" duration="1047000" />
-      <workItem from="1717674750624" duration="5513000" />
+      <workItem from="1717674750624" duration="6147000" />
+      <workItem from="1718726604305" duration="9442000" />
     </task>
     <task id="LOCAL-00001" summary="✨ migrate from global to 2023 only repo">
       <option name="closed" value="true" />
@@ -675,7 +682,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717679521711</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="✨ Solve day 6">
+      <option name="closed" value="true" />
+      <created>1717681895597</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1717681895597</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -716,7 +731,8 @@
     <MESSAGE value="✨ Bootstrap 2020 and solve the 4 first days" />
     <MESSAGE value="✨ Add session to gitignore" />
     <MESSAGE value="✨ Solve day 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 5" />
+    <MESSAGE value="✨ Solve day 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
