@@ -6,7 +6,6 @@ fn with_slope(input: &str, slope_right: usize, slope_down: usize) -> usize {
         .step_by(slope_down)
         .enumerate()
         .filter(|(i, line)| {
-            println!("{i}, {} {line}, {}", (slope_right * *i) % line.len(), line.chars().nth((slope_right * *i) % line.len()).unwrap() == '#');
             line.chars().nth((slope_right * *i) % line.len()).unwrap() == '#'
         })
         .count()

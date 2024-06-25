@@ -15,8 +15,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 7">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 8">
+      <change beforePath="$PROJECT_DIR$/src/bin/03.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/03.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
     "Cargo.Test tests::test_part_one (3).executor": "Run",
     "Cargo.Test tests::test_part_one.executor": "Run",
     "Cargo.Test tests::test_part_one_down.executor": "Run",
-    "Cargo.Test tests::test_part_two (1).executor": "Run",
+    "Cargo.Test tests::test_part_two (1).executor": "Debug",
     "Cargo.Test tests::test_part_two (2).executor": "Debug",
     "Cargo.Test tests::test_part_two (3).executor": "Run",
     "Cargo.Test tests::test_part_two.executor": "Run",
@@ -299,15 +299,7 @@
       <workItem from="1717671672568" duration="3000" />
       <workItem from="1717673009335" duration="1047000" />
       <workItem from="1717674750624" duration="6147000" />
-      <workItem from="1718726604305" duration="12181000" />
-    </task>
-    <task id="LOCAL-00001" summary="✨ migrate from global to 2023 only repo">
-      <option name="closed" value="true" />
-      <created>1702495467345</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1702495467345</updated>
+      <workItem from="1718726604305" duration="12284000" />
     </task>
     <task id="LOCAL-00002" summary="✨ migrate from global to 2023 only repo">
       <option name="closed" value="true" />
@@ -693,7 +685,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719297102797</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="✨ Solve day 8">
+      <option name="closed" value="true" />
+      <created>1719299842865</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1719299842865</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +711,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="✨ migrate from global to 2023 only repo" />
     <MESSAGE value="♻️ refactor day 7" />
     <MESSAGE value="✨ Solve 2023 day 14 (dirty slow)" />
     <MESSAGE value="✨ Solve 2023 day 15" />
@@ -736,7 +735,8 @@
     <MESSAGE value="✨ Solve day 5" />
     <MESSAGE value="✨ Solve day 6" />
     <MESSAGE value="✨ Solve day 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 7" />
+    <MESSAGE value="✨ Solve day 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 8" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
