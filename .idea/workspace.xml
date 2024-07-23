@@ -15,8 +15,8 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 8">
-      <change beforePath="$PROJECT_DIR$/src/bin/03.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/03.rs" afterDir="false" />
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ add timings&#10;&#10;- remove noisy log line from day 03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,12 +88,12 @@
     "Cargo.Test 17::tests.executor": "Debug",
     "Cargo.Test tests::test_intersection_2d.executor": "Run",
     "Cargo.Test tests::test_part_one (1).executor": "Debug",
-    "Cargo.Test tests::test_part_one (2).executor": "Run",
+    "Cargo.Test tests::test_part_one (2).executor": "Debug",
     "Cargo.Test tests::test_part_one (3).executor": "Run",
     "Cargo.Test tests::test_part_one.executor": "Run",
     "Cargo.Test tests::test_part_one_down.executor": "Run",
     "Cargo.Test tests::test_part_two (1).executor": "Debug",
-    "Cargo.Test tests::test_part_two (2).executor": "Debug",
+    "Cargo.Test tests::test_part_two (2).executor": "Run",
     "Cargo.Test tests::test_part_two (3).executor": "Run",
     "Cargo.Test tests::test_part_two.executor": "Run",
     "Cargo.Test tests::test_python.executor": "Run",
@@ -137,7 +137,7 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_two (1)">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_two (2)">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -172,8 +172,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 07 tests::test_part_one -- --exact" />
+    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 09 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -224,7 +224,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 06 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 09 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -260,19 +260,19 @@
     <list>
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
-      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
-      <item itemvalue="Cargo.Test tests::test_part_one" />
-      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
       <item itemvalue="Cargo.Test tests::test_part_two (2)" />
+      <item itemvalue="Cargo.Test tests::test_part_one" />
+      <item itemvalue="Cargo.Test tests::test_part_one (2)" />
+      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
       <item itemvalue="Cargo.Test tests::test_part_two" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
+        <item itemvalue="Cargo.Test tests::test_part_one (2)" />
         <item itemvalue="Cargo.Test tests::test_part_two (1)" />
         <item itemvalue="Cargo.Test tests::test_part_one" />
         <item itemvalue="Cargo.Test tests::test_part_two" />
-        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
-        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -299,15 +299,8 @@
       <workItem from="1717671672568" duration="3000" />
       <workItem from="1717673009335" duration="1047000" />
       <workItem from="1717674750624" duration="6147000" />
-      <workItem from="1718726604305" duration="12284000" />
-    </task>
-    <task id="LOCAL-00002" summary="✨ migrate from global to 2023 only repo">
-      <option name="closed" value="true" />
-      <created>1702495474316</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1702495474316</updated>
+      <workItem from="1718726604305" duration="14686000" />
+      <workItem from="1721768696632" duration="1279000" />
     </task>
     <task id="LOCAL-00003" summary="✨ migrate from global to 2023 only repo">
       <option name="closed" value="true" />
@@ -693,7 +686,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719299842865</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="✨ add timings&#10;&#10;- remove noisy log line from day 03">
+      <option name="closed" value="true" />
+      <created>1719300018820</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1719300018820</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -711,7 +712,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="♻️ refactor day 7" />
     <MESSAGE value="✨ Solve 2023 day 14 (dirty slow)" />
     <MESSAGE value="✨ Solve 2023 day 15" />
     <MESSAGE value=" cargo fmt" />
@@ -736,7 +736,8 @@
     <MESSAGE value="✨ Solve day 6" />
     <MESSAGE value="✨ Solve day 7" />
     <MESSAGE value="✨ Solve day 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 8" />
+    <MESSAGE value="✨ add timings&#10;&#10;- remove noisy log line from day 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ add timings&#10;&#10;- remove noisy log line from day 03" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
