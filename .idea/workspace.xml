@@ -15,8 +15,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ add timings&#10;&#10;- remove noisy log line from day 03">
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 10">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/readme-stars.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/readme-stars.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/12.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/12.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,66 +65,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Cargo.Expand 13.executor": "Run",
-    "Cargo.Expand 14.executor": "Run",
-    "Cargo.Expand 15.executor": "Run",
-    "Cargo.Expand 18.executor": "Run",
-    "Cargo.Run 15.executor": "Run",
-    "Cargo.Run 18.executor": "Debug",
-    "Cargo.Run advent_of_code.executor": "Run",
-    "Cargo.Test 01::tests.executor": "Run",
-    "Cargo.Test 02::tests.executor": "Run",
-    "Cargo.Test 03::tests.executor": "Run",
-    "Cargo.Test 04::tests.executor": "Run",
-    "Cargo.Test 05::tests.executor": "Run",
-    "Cargo.Test 06::tests.executor": "Run",
-    "Cargo.Test 07::tests.executor": "Run",
-    "Cargo.Test 08::tests.executor": "Run",
-    "Cargo.Test 09::tests.executor": "Run",
-    "Cargo.Test 10::tests.executor": "Run",
-    "Cargo.Test 11::tests.executor": "Run",
-    "Cargo.Test 12::tests.executor": "Run",
-    "Cargo.Test 13::tests.executor": "Run",
-    "Cargo.Test 17::tests.executor": "Debug",
-    "Cargo.Test tests::test_intersection_2d.executor": "Run",
-    "Cargo.Test tests::test_part_one (1).executor": "Debug",
-    "Cargo.Test tests::test_part_one (2).executor": "Debug",
-    "Cargo.Test tests::test_part_one (3).executor": "Run",
-    "Cargo.Test tests::test_part_one.executor": "Run",
-    "Cargo.Test tests::test_part_one_down.executor": "Run",
-    "Cargo.Test tests::test_part_two (1).executor": "Debug",
-    "Cargo.Test tests::test_part_two (2).executor": "Run",
-    "Cargo.Test tests::test_part_two (3).executor": "Run",
-    "Cargo.Test tests::test_part_two.executor": "Run",
-    "Cargo.Test tests::test_python.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "com.github.patou.gitmoji.display-icon": "emoji",
-    "com.github.patou.gitmoji.text-after-unicode": " ",
-    "com.github.patou.gitmoji.use-unicode": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/mania/perso/advent-of-code-2020/data/examples",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "build.tools",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cargo.Expand 13.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 14.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 15.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Expand 18.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run 15.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run 18.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Run advent_of_code.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 01::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 02::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 03::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 04::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 05::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 06::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 07::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 08::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 09::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 10::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 11::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 12::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 13::tests.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test 17::tests.executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test tests::test_intersection_2d.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one (2).executor&quot;: &quot;Debug&quot;,
+    &quot;Cargo.Test tests::test_part_one (3).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_one_down.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (1).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (2).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two (3).executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_part_two_2.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Test tests::test_python.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;com.github.patou.gitmoji.display-icon&quot;: &quot;emoji&quot;,
+    &quot;com.github.patou.gitmoji.text-after-unicode&quot;: &quot; &quot;,
+    &quot;com.github.patou.gitmoji.use-unicode&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mania/perso/advent-of-code-2020/data/examples&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT",
-      "yaml"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;,
+      &quot;yaml&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/examples" />
@@ -130,6 +133,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/grid" />
       <recent name="$PROJECT_DIR$/src/custom_grid" />
     </key>
   </component>
@@ -137,9 +141,26 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_two (2)">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_one (1)">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test 11::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 11 tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -172,8 +193,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 09 tests::test_part_one -- --exact" />
+    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 12 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -190,7 +211,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_one" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 08 tests::test_part_one -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 11 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -207,24 +228,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 08 tests::test_part_two -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test tests::test_part_two (2)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 09 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 11 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -241,7 +245,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 07 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 12 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -260,19 +264,19 @@
     <list>
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
-      <item itemvalue="Cargo.Test tests::test_part_two (2)" />
-      <item itemvalue="Cargo.Test tests::test_part_one" />
-      <item itemvalue="Cargo.Test tests::test_part_one (2)" />
-      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
       <item itemvalue="Cargo.Test tests::test_part_two" />
+      <item itemvalue="Cargo.Test 11::tests" />
+      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
+      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
+      <item itemvalue="Cargo.Test tests::test_part_one" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test tests::test_part_two (2)" />
-        <item itemvalue="Cargo.Test tests::test_part_one (2)" />
+        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
+        <item itemvalue="Cargo.Test tests::test_part_two" />
+        <item itemvalue="Cargo.Test 11::tests" />
         <item itemvalue="Cargo.Test tests::test_part_two (1)" />
         <item itemvalue="Cargo.Test tests::test_part_one" />
-        <item itemvalue="Cargo.Test tests::test_part_two" />
       </list>
     </recent_temporary>
   </component>
@@ -300,39 +304,10 @@
       <workItem from="1717673009335" duration="1047000" />
       <workItem from="1717674750624" duration="6147000" />
       <workItem from="1718726604305" duration="14686000" />
-      <workItem from="1721768696632" duration="1279000" />
-    </task>
-    <task id="LOCAL-00003" summary="✨ migrate from global to 2023 only repo">
-      <option name="closed" value="true" />
-      <created>1702495567338</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1702495567338</updated>
-    </task>
-    <task id="LOCAL-00004" summary="✨ migrate from global to 2023 only repo">
-      <option name="closed" value="true" />
-      <created>1702495900529</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702495900529</updated>
-    </task>
-    <task id="LOCAL-00005" summary="✨ migrate from global to 2023 only repo">
-      <option name="closed" value="true" />
-      <created>1702496112261</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702496112261</updated>
-    </task>
-    <task id="LOCAL-00006" summary="♻️ refactor day 7">
-      <option name="closed" value="true" />
-      <created>1702501529988</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1702501529988</updated>
+      <workItem from="1721768696632" duration="10929000" />
+      <workItem from="1725986616053" duration="4584000" />
+      <workItem from="1726346353656" duration="2850000" />
+      <workItem from="1726516628120" duration="2126000" />
     </task>
     <task id="LOCAL-00007" summary="♻️ refactor day 7">
       <option name="closed" value="true" />
@@ -694,7 +669,39 @@
       <option name="project" value="LOCAL" />
       <updated>1719300018820</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="✨ ✨ Solve day 9">
+      <option name="closed" value="true" />
+      <created>1721770011263</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1721770011263</updated>
+    </task>
+    <task id="LOCAL-00053" summary="✨ Solve day 9">
+      <option name="closed" value="true" />
+      <created>1721770016278</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1721770016278</updated>
+    </task>
+    <task id="LOCAL-00054" summary="✨ Solve day 10">
+      <option name="closed" value="true" />
+      <created>1721861640724</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1721861640724</updated>
+    </task>
+    <task id="LOCAL-00055" summary="✨ Solve day 10">
+      <option name="closed" value="true" />
+      <created>1721861654447</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1721861654447</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -712,9 +719,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="✨ Solve 2023 day 14 (dirty slow)" />
-    <MESSAGE value="✨ Solve 2023 day 15" />
-    <MESSAGE value=" cargo fmt" />
     <MESSAGE value="tmp 15.5" />
     <MESSAGE value="⚡️ improve day 14 part 2 performances (memoize)" />
     <MESSAGE value="✨ ✨ Solve 2023 day 16" />
@@ -737,7 +741,10 @@
     <MESSAGE value="✨ Solve day 7" />
     <MESSAGE value="✨ Solve day 8" />
     <MESSAGE value="✨ add timings&#10;&#10;- remove noisy log line from day 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ add timings&#10;&#10;- remove noisy log line from day 03" />
+    <MESSAGE value="✨ ✨ Solve day 9" />
+    <MESSAGE value="✨ Solve day 9" />
+    <MESSAGE value="✨ Solve day 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 10" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
