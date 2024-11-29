@@ -1,5 +1,5 @@
-use std::str::FromStr;
 use fxhash::FxHashSet;
+use std::str::FromStr;
 advent_of_code::solution!(8);
 
 #[derive(Debug, PartialEq, Eq, Copy, Clone)]
@@ -12,23 +12,28 @@ enum Instruction {
 #[derive(Debug, PartialEq, Eq)]
 struct ParseInstructionError;
 
-
 impl FromStr for Instruction {
     type Err = ParseInstructionError;
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
-        match  s.split_once(" ").ok_or(ParseInstructionError)? {
-            ("nop", v) => Ok(Instruction::Nop(v.parse().map_err(|_| ParseInstructionError)?)),
-            ("acc", v) => Ok(Instruction::Acc(v.parse().map_err(|_| ParseInstructionError)?)),
-            ("jmp", v) => Ok(Instruction::Jmp(v.parse().map_err(|_| ParseInstructionError)?)),
-            _ => Err(ParseInstructionError)
+        match s.split_once(" ").ok_or(ParseInstructionError)? {
+            ("nop", v) => Ok(Instruction::Nop(
+                v.parse().map_err(|_| ParseInstructionError)?,
+            )),
+            ("acc", v) => Ok(Instruction::Acc(
+                v.parse().map_err(|_| ParseInstructionError)?,
+            )),
+            ("jmp", v) => Ok(Instruction::Jmp(
+                v.parse().map_err(|_| ParseInstructionError)?,
+            )),
+            _ => Err(ParseInstructionError),
         }
     }
 }
 
 enum ProgramExecutionResult {
     Infinite(u32),
-    Ended(u32)
+    Ended(u32),
 }
 
 fn execute_program(program: &Vec<Instruction>) -> ProgramExecutionResult {
@@ -36,18 +41,18 @@ fn execute_program(program: &Vec<Instruction>) -> ProgramExecutionResult {
     let mut acc = 0;
     let mut visited = FxHashSet::default();
 
-
     while !visited.contains(&pc) {
         visited.insert(pc);
 
         match program.get(pc) {
-            Some(instruction) =>
+            Some(instruction) => {
                 (pc, acc) = match instruction {
                     Instruction::Nop(_) => (pc + 1, acc),
                     Instruction::Jmp(n) => (((pc as isize) + *n) as usize, acc),
                     Instruction::Acc(n) => (pc + 1, acc + n),
-                },
-            None => return ProgramExecutionResult::Ended(acc as u32)
+                }
+            }
+            None => return ProgramExecutionResult::Ended(acc as u32),
         }
     }
 
@@ -62,7 +67,7 @@ pub fn part_one(input: &str) -> Option<u32> {
 
     match execute_program(&program) {
         ProgramExecutionResult::Infinite(n) => Some(n),
-        ProgramExecutionResult::Ended(_) => panic!("Program ended")
+        ProgramExecutionResult::Ended(_) => panic!("Program ended"),
     }
 }
 
@@ -72,7 +77,6 @@ pub fn part_two(input: &str) -> Option<u32> {
         .map(|instruction| instruction.parse().unwrap())
         .collect();
 
-
     for i in 0..program.len() {
         let instruction = program.get_mut(i).unwrap();
         let tmp: Instruction = *instruction;
@@ -80,12 +84,12 @@ pub fn part_two(input: &str) -> Option<u32> {
         match instruction {
             Instruction::Nop(n) => *instruction = Instruction::Jmp(*n),
             Instruction::Jmp(n) => *instruction = Instruction::Nop(*n),
-            Instruction::Acc(_) => continue
+            Instruction::Acc(_) => continue,
         }
 
         match execute_program(&program) {
             ProgramExecutionResult::Infinite(_) => {}
-            ProgramExecutionResult::Ended(n) => return Some(n)
+            ProgramExecutionResult::Ended(n) => return Some(n),
         }
 
         let instruction = program.get_mut(i).unwrap();

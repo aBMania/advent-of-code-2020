@@ -1,33 +1,29 @@
-use std::collections::HashSet;
 use itertools::Itertools;
+use std::collections::HashSet;
 advent_of_code::solution!(6);
 
 pub fn part_one(input: &str) -> Option<usize> {
-    Some(input
-        .split("\n\n")
-        .map(|group|
-            group
-                .chars()
-                .filter(|c| *c != '\n')
-                .unique()
-                .count()
-        )
-        .sum()
+    Some(
+        input
+            .split("\n\n")
+            .map(|group| group.chars().filter(|c| *c != '\n').unique().count())
+            .sum(),
     )
 }
 
 pub fn part_two(input: &str) -> Option<usize> {
-    Some(input
-        .split("\n\n")
-        .map(|group| {
-            group
-                .lines()
-                .map(|person| person.chars().collect::<HashSet<_>>())
-                .reduce(|a, b| a.intersection(&b).copied().collect::<HashSet<_>>())
-                .unwrap()
-                .len()
-        })
-        .sum()
+    Some(
+        input
+            .split("\n\n")
+            .map(|group| {
+                group
+                    .lines()
+                    .map(|person| person.chars().collect::<HashSet<_>>())
+                    .reduce(|a, b| a.intersection(&b).copied().collect::<HashSet<_>>())
+                    .unwrap()
+                    .len()
+            })
+            .sum(),
     )
 }
 

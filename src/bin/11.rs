@@ -1,4 +1,4 @@
-use advent_of_code::grid::{CustomGrid, input_to_grid};
+use advent_of_code::grid::{input_to_grid, CustomGrid};
 advent_of_code::solution!(11);
 
 fn apply_iteration(grid: &mut CustomGrid<char>) -> bool {
@@ -6,9 +6,12 @@ fn apply_iteration(grid: &mut CustomGrid<char>) -> bool {
     let mut changed = false;
 
     for ((x, y), c) in grid.indexed_iter() {
-        match (c, grid.iter_diagonal_neighbors(x, y)
-            .filter(|(_, &c)| c == '#')
-            .count()) {
+        match (
+            c,
+            grid.iter_diagonal_neighbors(x, y)
+                .filter(|(_, &c)| c == '#')
+                .count(),
+        ) {
             ('L', 0) => {
                 *tmp_grid.get_mut(x, y).unwrap() = '#';
                 changed = true;
@@ -39,29 +42,28 @@ fn apply_iteration_2(grid: &mut CustomGrid<char>) -> bool {
             (0isize, 1isize),
             (1isize, -1isize),
             (1isize, 0isize),
-            (1isize, 1isize)
+            (1isize, 1isize),
         ]
-            .iter()
-            .filter_map(|(y_offset, x_offset)| {
-                let (mut current_x, mut current_y) = (x, y);
-                loop {
-                    if ((current_x as isize) < -*x_offset) || ((current_y as isize) < -*y_offset) {
-                        break None;
-                    }
-                    current_x = ((current_x as isize) + x_offset) as usize;
-                    current_y = ((current_y as isize) + y_offset) as usize;
-                    match grid.get(current_x, current_y) {
-                        None => break None,
-                        Some(c) => match c {
-                            '.' => continue,
-                            c => break Some(c)
-                        }
-                    }
+        .iter()
+        .filter_map(|(y_offset, x_offset)| {
+            let (mut current_x, mut current_y) = (x, y);
+            loop {
+                if ((current_x as isize) < -*x_offset) || ((current_y as isize) < -*y_offset) {
+                    break None;
                 }
-            })
-            .filter(|&&c| c == '#')
-            .count();
-
+                current_x = ((current_x as isize) + x_offset) as usize;
+                current_y = ((current_y as isize) + y_offset) as usize;
+                match grid.get(current_x, current_y) {
+                    None => break None,
+                    Some(c) => match c {
+                        '.' => continue,
+                        c => break Some(c),
+                    },
+                }
+            }
+        })
+        .filter(|&&c| c == '#')
+        .count();
 
         match (c, extented_diagonal_neighbor_count) {
             ('L', 0) => {
@@ -80,7 +82,6 @@ fn apply_iteration_2(grid: &mut CustomGrid<char>) -> bool {
 
     changed
 }
-
 
 pub fn part_one(input: &str) -> Option<u32> {
     let mut grid: CustomGrid<char> = input_to_grid(input).unwrap();

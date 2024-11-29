@@ -7,18 +7,19 @@ pub fn _part_one(input: &str, preamble: usize) -> Option<u64> {
         .collect::<Vec<u64>>();
 
     'outer: for i in preamble..input.len() {
-        let cypher_numbers = &input[i-preamble..i];
+        let cypher_numbers = &input[i - preamble..i];
         let checked_number = input[i];
 
         for x in cypher_numbers.iter() {
-            if cypher_numbers.iter().any(|n| {
-                *x != *n && *x + *n == checked_number
-            }) {
-                continue 'outer
+            if cypher_numbers
+                .iter()
+                .any(|n| *x != *n && *x + *n == checked_number)
+            {
+                continue 'outer;
             }
         }
 
-        return Some(checked_number)
+        return Some(checked_number);
     }
 
     None
@@ -47,7 +48,7 @@ pub fn _part_two(input: &str, preamble: usize) -> Option<u64> {
             max = Some(max.map_or(n, |current_max: &u64| current_max.max(n)));
 
             if acc == part_one_result {
-                return Some(min.unwrap() + max.unwrap())
+                return Some(min.unwrap() + max.unwrap());
             }
         }
     }

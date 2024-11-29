@@ -5,9 +5,7 @@ fn with_slope(input: &str, slope_right: usize, slope_down: usize) -> usize {
         .lines()
         .step_by(slope_down)
         .enumerate()
-        .filter(|(i, line)| {
-            line.chars().nth((slope_right * *i) % line.len()).unwrap() == '#'
-        })
+        .filter(|(i, line)| line.chars().nth((slope_right * *i) % line.len()).unwrap() == '#')
         .count()
 }
 
@@ -16,13 +14,12 @@ pub fn part_one(input: &str) -> Option<usize> {
 }
 
 pub fn part_two(input: &str) -> Option<usize> {
-    let result = 
-        with_slope(input, 1, 1) *
-        with_slope(input, 3, 1) *
-        with_slope(input, 5, 1) *
-        with_slope(input, 7, 1) *
-        with_slope(input, 1, 2);
-    
+    let result = with_slope(input, 1, 1)
+        * with_slope(input, 3, 1)
+        * with_slope(input, 5, 1)
+        * with_slope(input, 7, 1)
+        * with_slope(input, 1, 2);
+
     Some(result)
 }
 

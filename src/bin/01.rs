@@ -9,10 +9,10 @@ pub fn part_one(input: &str) -> Option<u64> {
         .collect();
 
     let (i, j) = iproduct!(numbers.clone(), numbers)
-        .find(|(i, j) | i+j == 2020)
+        .find(|(i, j)| i + j == 2020)
         .unwrap();
 
-    Some(i*j)
+    Some(i * j)
 }
 
 pub fn part_two(input: &str) -> Option<u64> {
@@ -23,10 +23,10 @@ pub fn part_two(input: &str) -> Option<u64> {
         .collect();
 
     let (i, j, k) = iproduct!(numbers.clone(), numbers.clone(), numbers)
-        .find(|(i, j, k) | i+j+k == 2020)
+        .find(|(i, j, k)| i + j + k == 2020)
         .unwrap();
 
-    Some(i*j*k)
+    Some(i * j * k)
 }
 
 #[cfg(test)]

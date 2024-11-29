@@ -1,5 +1,5 @@
-use std::str::FromStr;
 use itertools::Itertools;
+use std::str::FromStr;
 advent_of_code::solution!(5);
 
 #[derive(Debug)]
@@ -19,49 +19,39 @@ impl FromStr for Seat {
 
         let last_char = row.chars().last().ok_or(ParseSeatError)?;
 
-        let row =
-            row
-                .chars()
-                .fold((0, 127), |(min, max), c| {
-                    let gap_len = max - min;
-                    match c {
-                        'F' => (min, max - gap_len / 2 - 1),
-                        'B' => (min + gap_len / 2 + 1, max),
-                        _ => panic!("Unexpected char {c}")
-                    }
-                });
+        let row = row.chars().fold((0, 127), |(min, max), c| {
+            let gap_len = max - min;
+            match c {
+                'F' => (min, max - gap_len / 2 - 1),
+                'B' => (min + gap_len / 2 + 1, max),
+                _ => panic!("Unexpected char {c}"),
+            }
+        });
 
         let row = match last_char {
             'F' => row.0,
             'B' => row.1,
-            _ => panic!("Unexpected char {last_char}")
+            _ => panic!("Unexpected char {last_char}"),
         };
 
         let last_char = column.chars().last().ok_or(ParseSeatError)?;
 
-        let column =
-            column
-                .chars()
-                .fold((0, 7), |(min, max), c| {
-                    let gap_len = max - min;
-                    match c {
-                        'L' => (min, max - gap_len / 2 - 1),
-                        'R' => (min + gap_len / 2 + 1, max),
-                        _ => panic!("Unexpected char {c}")
-                    }
-                });
+        let column = column.chars().fold((0, 7), |(min, max), c| {
+            let gap_len = max - min;
+            match c {
+                'L' => (min, max - gap_len / 2 - 1),
+                'R' => (min + gap_len / 2 + 1, max),
+                _ => panic!("Unexpected char {c}"),
+            }
+        });
 
         let column = match last_char {
             'R' => column.0,
             'L' => column.1,
-            _ => panic!("Unexpected char {last_char}")
+            _ => panic!("Unexpected char {last_char}"),
         };
 
-
-        Ok(Seat {
-            row,
-            column,
-        })
+        Ok(Seat { row, column })
     }
 }
 
@@ -85,7 +75,7 @@ pub fn part_two(input: &str) -> Option<usize> {
         .map(|row| row.parse().unwrap())
         .map(|seat: Seat| seat.id())
         .sorted()
-        .tuple_windows::<(_,_)>()
+        .tuple_windows::<(_, _)>()
         .find(|(prev, next)| *next != *prev + 1)
         .map(|(left_seat, _)| left_seat + 1)
 }

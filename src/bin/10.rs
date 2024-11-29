@@ -5,7 +5,6 @@ use itertools::Itertools;
 
 advent_of_code::solution!(10);
 
-
 pub fn part_one(input: &str) -> Option<u32> {
     let (jolt_1, jolt_3) = input
         .lines()
@@ -16,7 +15,7 @@ pub fn part_one(input: &str) -> Option<u32> {
         .fold((0, 0), |(jolt_1, jolt_3), (prev, next)| match next - prev {
             3 => (jolt_1, jolt_3 + 1),
             1 => (jolt_1 + 1, jolt_3),
-            _ => (jolt_1, jolt_3)
+            _ => (jolt_1, jolt_3),
         });
     Some(jolt_1 * (jolt_3 + 1))
 }
@@ -56,7 +55,9 @@ mod tests {
 
     #[test]
     fn test_part_one_2() {
-        let result = part_one(&advent_of_code::template::read_file_part("examples", DAY, 2));
+        let result = part_one(&advent_of_code::template::read_file_part(
+            "examples", DAY, 2,
+        ));
         assert_eq!(result, Some(220));
     }
 
@@ -68,7 +69,9 @@ mod tests {
 
     #[test]
     fn test_part_two_2() {
-        let result = part_two(&advent_of_code::template::read_file_part("examples", DAY, 2));
+        let result = part_two(&advent_of_code::template::read_file_part(
+            "examples", DAY, 2,
+        ));
         assert_eq!(result, Some(19208));
     }
 }

@@ -1,5 +1,5 @@
-use std::str::FromStr;
 use regex::Regex;
+use std::str::FromStr;
 advent_of_code::solution!(4);
 
 #[derive(Debug)]
@@ -12,7 +12,7 @@ impl Height {
     pub(crate) fn validate(&self) -> bool {
         match self {
             Height::CM(h) => *h >= 150 && *h <= 193,
-            Height::IN(h) => *h >= 59 && *h <= 76
+            Height::IN(h) => *h >= 59 && *h <= 76,
         }
     }
 }
@@ -25,20 +25,12 @@ impl FromStr for Height {
 
     fn from_str(s: &str) -> Result<Self, Self::Err> {
         if let Some(s) = s.strip_suffix("cm") {
-            return s
-                .parse()
-                .map(Height::CM)
-                .map_err(|_| ParseHeightError);
+            return s.parse().map(Height::CM).map_err(|_| ParseHeightError);
         }
-
 
         if let Some(s) = s.strip_suffix("in") {
-            return s
-                .parse()
-                .map(Height::IN)
-                .map_err(|_| ParseHeightError);
+            return s.parse().map(Height::IN).map_err(|_| ParseHeightError);
         }
-
 
         Err(ParseHeightError)
     }
@@ -67,9 +59,13 @@ impl<'a> Passport<'a> {
             && self.expiration_year >= 2020
             && self.expiration_year <= 2030
             && self.height.validate()
-            && Regex::new(r"^#[0-9a-f]{6}$").unwrap().is_match(self.hair_color)
+            && Regex::new(r"^#[0-9a-f]{6}$")
+                .unwrap()
+                .is_match(self.hair_color)
             && ["amb", "blu", "brn", "gry", "grn", "hzl", "oth"].contains(&self.eye_color)
-            && Regex::new(r"^[0-9]{9}$").unwrap().is_match(self.passport_id)
+            && Regex::new(r"^[0-9]{9}$")
+                .unwrap()
+                .is_match(self.passport_id)
     }
 
     fn parse(s: &'a str) -> Result<Self, ParsePassportError> {
@@ -96,7 +92,7 @@ impl<'a> Passport<'a> {
                 "cid" => country_id = Some(value.parse().unwrap()),
                 &_ => {}
             }
-        };
+        }
 
         if birth_year.is_none()
             || issue_year.is_none()
@@ -104,7 +100,8 @@ impl<'a> Passport<'a> {
             || height.is_none()
             || hair_color.is_none()
             || eye_color.is_none()
-            || passport_id.is_none() {
+            || passport_id.is_none()
+        {
             return Err(ParsePassportError);
         }
 
@@ -119,21 +116,20 @@ impl<'a> Passport<'a> {
             country_id,
         })
     }
-
 }
 
 pub fn part_one(input: &str) -> Option<usize> {
     let result = input
         .split("\n\n")
-        .filter(|passport|
-            passport.contains("byr:") &&
-                passport.contains("iyr:") &&
-                passport.contains("eyr:") &&
-                passport.contains("hgt:") &&
-                passport.contains("hcl:") &&
-                passport.contains("ecl:") &&
-                passport.contains("pid:")
-        )
+        .filter(|passport| {
+            passport.contains("byr:")
+                && passport.contains("iyr:")
+                && passport.contains("eyr:")
+                && passport.contains("hgt:")
+                && passport.contains("hcl:")
+                && passport.contains("ecl:")
+                && passport.contains("pid:")
+        })
         .count();
 
     Some(result)

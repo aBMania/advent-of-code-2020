@@ -28,10 +28,7 @@ pub fn parse_row(input: &str) -> Row {
 }
 
 pub fn part_one(input: &str) -> Option<usize> {
-    let input: Vec<_> = input
-        .lines()
-        .map(|row| parse_row(row))
-        .collect();
+    let input: Vec<_> = input.lines().map(|row| parse_row(row)).collect();
 
     let count = input
         .iter()
@@ -46,16 +43,13 @@ pub fn part_one(input: &str) -> Option<usize> {
 }
 
 pub fn part_two(input: &str) -> Option<usize> {
-    let input: Vec<_> = input
-        .lines()
-        .map(|row| parse_row(row))
-        .collect();
+    let input: Vec<_> = input.lines().map(|row| parse_row(row)).collect();
 
     let count = input
         .iter()
         .filter(|row| {
-            let cond1= row.password.chars().nth((row.min - 1) as usize).unwrap() == row.letter;
-            let cond2= row.password.chars().nth((row.max - 1) as usize).unwrap() == row.letter;
+            let cond1 = row.password.chars().nth((row.min - 1) as usize).unwrap() == row.letter;
+            let cond2 = row.password.chars().nth((row.max - 1) as usize).unwrap() == row.letter;
 
             cond1 != cond2
         })
