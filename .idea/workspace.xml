@@ -16,9 +16,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 10">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/readme-stars.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/readme-stars.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crt/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/12.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/12.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/13.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/13.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +33,7 @@
       <option value="directory" />
     </option>
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:test" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -65,67 +69,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cargo.Expand 13.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Expand 14.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Expand 15.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Expand 18.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run 15.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run 18.executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Run advent_of_code.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 01::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 02::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 03::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 04::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 05::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 06::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 07::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 08::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 09::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 10::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 11::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 12::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 13::tests.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test 17::tests.executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Test tests::test_intersection_2d.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_one (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_one (2).executor&quot;: &quot;Debug&quot;,
-    &quot;Cargo.Test tests::test_part_one (3).executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_one.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_one_down.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_two (1).executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_two (2).executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_two (3).executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_two.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_part_two_2.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Test tests::test_python.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;com.github.patou.gitmoji.display-icon&quot;: &quot;emoji&quot;,
-    &quot;com.github.patou.gitmoji.text-after-unicode&quot;: &quot; &quot;,
-    &quot;com.github.patou.gitmoji.use-unicode&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mania/perso/advent-of-code-2020/data/examples&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon&quot;: &quot;&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cargo.Expand 13.executor": "Run",
+    "Cargo.Expand 14.executor": "Run",
+    "Cargo.Expand 15.executor": "Run",
+    "Cargo.Expand 18.executor": "Run",
+    "Cargo.Run 15.executor": "Run",
+    "Cargo.Run 18.executor": "Debug",
+    "Cargo.Run advent_of_code.executor": "Run",
+    "Cargo.Test 01::tests.executor": "Run",
+    "Cargo.Test 02::tests.executor": "Run",
+    "Cargo.Test 03::tests.executor": "Run",
+    "Cargo.Test 04::tests.executor": "Run",
+    "Cargo.Test 05::tests.executor": "Run",
+    "Cargo.Test 06::tests.executor": "Run",
+    "Cargo.Test 07::tests.executor": "Run",
+    "Cargo.Test 08::tests.executor": "Run",
+    "Cargo.Test 09::tests.executor": "Run",
+    "Cargo.Test 10::tests.executor": "Run",
+    "Cargo.Test 11::tests.executor": "Run",
+    "Cargo.Test 12::tests.executor": "Run",
+    "Cargo.Test 13::tests.executor": "Run",
+    "Cargo.Test 17::tests.executor": "Debug",
+    "Cargo.Test crt::tests::test_crt.executor": "Run",
+    "Cargo.Test crt::tests::test_euclide.executor": "Run",
+    "Cargo.Test crt::tests::test_extended_gcd.executor": "Run",
+    "Cargo.Test crt::tests::test_solve_crt.executor": "Run",
+    "Cargo.Test tests::test_intersection_2d.executor": "Run",
+    "Cargo.Test tests::test_part_one (1).executor": "Run",
+    "Cargo.Test tests::test_part_one (2).executor": "Debug",
+    "Cargo.Test tests::test_part_one (3).executor": "Run",
+    "Cargo.Test tests::test_part_one.executor": "Run",
+    "Cargo.Test tests::test_part_one_down.executor": "Run",
+    "Cargo.Test tests::test_part_two (1).executor": "Run",
+    "Cargo.Test tests::test_part_two (2).executor": "Run",
+    "Cargo.Test tests::test_part_two (3).executor": "Run",
+    "Cargo.Test tests::test_part_two.executor": "Run",
+    "Cargo.Test tests::test_part_two_2.executor": "Run",
+    "Cargo.Test tests::test_python.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "com.github.patou.gitmoji.display-icon": "emoji",
+    "com.github.patou.gitmoji.text-after-unicode": " ",
+    "com.github.patou.gitmoji.use-unicode": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/mania/perso/advent-of-code-2020",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "language.rust.build.tool.cargo",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;,
-      &quot;yaml&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT",
+      "yaml"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data/examples" />
@@ -141,26 +150,9 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_one (1)">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_two">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test 11::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 11 tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -193,8 +185,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 12 tests::test_part_one -- --exact" />
+    <configuration name="Test crt::tests::test_crt" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --lib crt::tests::test_crt -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -210,8 +202,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_one" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 11 tests::test_part_one -- --exact" />
+    <configuration name="Test crt::tests::test_euclide" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --lib crt::tests::test_euclide -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -227,8 +219,26 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::test_part_two (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 11 tests::test_part_two -- --exact" />
+    <configuration name="Test crt::tests::test_extended_gcd" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --lib crt::tests::test_extended_gcd -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test crt::tests::test_solve_crt" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="test" />
+      <option name="command" value="test --package advent_of_code --lib crt::tests::test_solve_crt -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -245,7 +255,7 @@
       </method>
     </configuration>
     <configuration name="Test tests::test_part_two" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --bin 12 tests::test_part_two -- --exact" />
+      <option name="command" value="test --package advent_of_code --bin 13 tests::test_part_two -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -264,19 +274,19 @@
     <list>
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
+      <item itemvalue="Cargo.Test crt::tests::test_crt" />
+      <item itemvalue="Cargo.Test crt::tests::test_euclide" />
+      <item itemvalue="Cargo.Test crt::tests::test_extended_gcd" />
+      <item itemvalue="Cargo.Test crt::tests::test_solve_crt" />
       <item itemvalue="Cargo.Test tests::test_part_two" />
-      <item itemvalue="Cargo.Test 11::tests" />
-      <item itemvalue="Cargo.Test tests::test_part_one (1)" />
-      <item itemvalue="Cargo.Test tests::test_part_two (1)" />
-      <item itemvalue="Cargo.Test tests::test_part_one" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test tests::test_part_one (1)" />
         <item itemvalue="Cargo.Test tests::test_part_two" />
-        <item itemvalue="Cargo.Test 11::tests" />
-        <item itemvalue="Cargo.Test tests::test_part_two (1)" />
-        <item itemvalue="Cargo.Test tests::test_part_one" />
+        <item itemvalue="Cargo.Test crt::tests::test_crt" />
+        <item itemvalue="Cargo.Test crt::tests::test_solve_crt" />
+        <item itemvalue="Cargo.Test crt::tests::test_extended_gcd" />
+        <item itemvalue="Cargo.Test crt::tests::test_euclide" />
       </list>
     </recent_temporary>
   </component>
@@ -308,6 +318,8 @@
       <workItem from="1725986616053" duration="4584000" />
       <workItem from="1726346353656" duration="2850000" />
       <workItem from="1726516628120" duration="2126000" />
+      <workItem from="1732401660794" duration="963000" />
+      <workItem from="1732833948303" duration="9441000" />
     </task>
     <task id="LOCAL-00007" summary="♻️ refactor day 7">
       <option name="closed" value="true" />

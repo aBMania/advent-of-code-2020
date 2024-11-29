@@ -1,6 +1,6 @@
-pub mod template;
+pub mod crt;
 pub mod grid;
-
+pub mod template;
 // Use this file to add helper functions and additional modules.
 
 #[derive(Debug)]
@@ -8,7 +8,7 @@ pub enum Direction {
     North,
     East,
     South,
-    West
+    West,
 }
 
 impl Direction {
@@ -20,7 +20,7 @@ impl Direction {
             Direction::West => Direction::North,
         }
     }
-    
+
     pub fn rotate_left(&self) -> Direction {
         match self {
             Direction::East => Direction::North,
@@ -29,7 +29,7 @@ impl Direction {
             Direction::North => Direction::West,
         }
     }
-    
+
     pub fn opposite(&self) -> Direction {
         match self {
             Direction::East => Direction::West,
