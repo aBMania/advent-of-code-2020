@@ -15,13 +15,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="✨ Solve day 10">
-      <change afterPath="$PROJECT_DIR$/src/crt/mod.rs" afterDir="false" />
+    <list default="true" id="232fcd95-3e9f-472c-8c10-6d80a73a8af0" name="Changes" comment="🎨 cargo fmt">
+      <change afterPath="$PROJECT_DIR$/data/examples/14.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bin/14.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bin/13.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/13.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +94,7 @@
     "Cargo.Test crt::tests::test_extended_gcd.executor": "Run",
     "Cargo.Test crt::tests::test_solve_crt.executor": "Run",
     "Cargo.Test tests::test_intersection_2d.executor": "Run",
+    "Cargo.Test tests::test_mask.executor": "Run",
     "Cargo.Test tests::test_part_one (1).executor": "Run",
     "Cargo.Test tests::test_part_one (2).executor": "Debug",
     "Cargo.Test tests::test_part_one (3).executor": "Run",
@@ -150,7 +148,7 @@
     <option name="runOnTheFly" value="true" />
     <option name="tool" value="Clippy" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::test_part_two">
+  <component name="RunManager" selected="Cargo.Test tests::test_part_one">
     <configuration name="Run advent_of_code" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run --package advent_of_code --bin advent_of_code" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -202,43 +200,43 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test crt::tests::test_euclide" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --lib crt::tests::test_euclide -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test crt::tests::test_extended_gcd" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent_of_code --lib crt::tests::test_extended_gcd -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test crt::tests::test_solve_crt" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="test" />
       <option name="command" value="test --package advent_of_code --lib crt::tests::test_solve_crt -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_mask" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 14 tests::test_mask -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::test_part_one" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent_of_code --bin 14 tests::test_part_one -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -274,19 +272,19 @@
     <list>
       <item itemvalue="Cargo.Run advent_of_code" />
       <item itemvalue="Cargo.Test advent_of_code" />
+      <item itemvalue="Cargo.Test tests::test_mask" />
+      <item itemvalue="Cargo.Test tests::test_part_one" />
       <item itemvalue="Cargo.Test crt::tests::test_crt" />
-      <item itemvalue="Cargo.Test crt::tests::test_euclide" />
-      <item itemvalue="Cargo.Test crt::tests::test_extended_gcd" />
       <item itemvalue="Cargo.Test crt::tests::test_solve_crt" />
       <item itemvalue="Cargo.Test tests::test_part_two" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_part_one" />
+        <item itemvalue="Cargo.Test tests::test_mask" />
         <item itemvalue="Cargo.Test tests::test_part_two" />
         <item itemvalue="Cargo.Test crt::tests::test_crt" />
         <item itemvalue="Cargo.Test crt::tests::test_solve_crt" />
-        <item itemvalue="Cargo.Test crt::tests::test_extended_gcd" />
-        <item itemvalue="Cargo.Test crt::tests::test_euclide" />
       </list>
     </recent_temporary>
   </component>
@@ -319,23 +317,8 @@
       <workItem from="1726346353656" duration="2850000" />
       <workItem from="1726516628120" duration="2126000" />
       <workItem from="1732401660794" duration="963000" />
-      <workItem from="1732833948303" duration="9441000" />
-    </task>
-    <task id="LOCAL-00007" summary="♻️ refactor day 7">
-      <option name="closed" value="true" />
-      <created>1702501799639</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702501799639</updated>
-    </task>
-    <task id="LOCAL-00008" summary="♻️ refactor day 7">
-      <option name="closed" value="true" />
-      <created>1702502704177</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1702502704177</updated>
+      <workItem from="1732833948303" duration="10221000" />
+      <workItem from="1732925364976" duration="3227000" />
     </task>
     <task id="LOCAL-00009" summary="✨ Solve 2023 day 14 (dirty slow)">
       <option name="closed" value="true" />
@@ -713,7 +696,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721861654447</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="✨ Solve day 13">
+      <option name="closed" value="true" />
+      <created>1732873957293</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1732873957293</updated>
+    </task>
+    <task id="LOCAL-00057" summary="🎨 cargo fmt">
+      <option name="closed" value="true" />
+      <created>1732874061143</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1732874061143</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -731,8 +730,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tmp 15.5" />
-    <MESSAGE value="⚡️ improve day 14 part 2 performances (memoize)" />
     <MESSAGE value="✨ ✨ Solve 2023 day 16" />
     <MESSAGE value="✨ Solve 2023 day 16" />
     <MESSAGE value="⚡️ Enhance day 16" />
@@ -756,7 +753,9 @@
     <MESSAGE value="✨ ✨ Solve day 9" />
     <MESSAGE value="✨ Solve day 9" />
     <MESSAGE value="✨ Solve day 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="✨ Solve day 10" />
+    <MESSAGE value="✨ Solve day 13" />
+    <MESSAGE value=" cargo fmt" />
+    <option name="LAST_COMMIT_MESSAGE" value=" cargo fmt" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
